@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.bbtshub" name=".[COLOR green]BBTS The hub[/COLOR]" version="0.0.1" provider-name="B.B.T.S">
+<requires>
+    <import addon="xbmc.addon" version="12.0.0" />
+</requires>
+        <extension point="xbmc.addon.repository" name="BBTS Hub">
+                <info compressed="false">https://raw.githubusercontent.com/BBTS-/bbtshub/master/addons/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/BBTS-/bbtshub/master/addons/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/BBTS-/bbtshub/master/addons/</datadir>
+				<hashes>true</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>BBTS The HUB</summary>
+                <description>Download and install Repository's</description>
+		        <disclaimer>The repository hub is maintained by the BBTS community.</disclaimer>
+                <platform>all</platform>
+				<website>http://www.bbtsip.tv/</website>
+        </extension>
+</addon>
+
+<addon id="repository.bbtsip.tv" name=".[COLOR chartreuse]BBTS[/COLOR][COLOR white] Repo[/COLOR]" version="0.0.3" provider-name="BBTS">
+<requires>
+    <import addon="xbmc.addon" version="12.0.0" />
+</requires>
+        <extension point="xbmc.addon.repository" name="BBTS Repo">
+                <info compressed="false">http://tims.webs.pm/repo/addons.xml</info>
+                <checksum>http://tims.webs.pm/repo/addons.xml.md5</checksum>
+                <datadir zip="true">http://tims.webs.pm/repo/addons/</datadir>
+                <hashes>true</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Install add-ons from the BBTS Repository</summary>
+                <description>Download and install add-ons from the BBTS Repository</description>
+                <disclaimer>The repository is maintained by the Kodi community and our generator fetches addons from multiple sources. Therefore BBTV accepts no responsibility for included addons.</disclaimer>
+                <platform>all</platform>
+                <website>http://www.bbtsip.tv/</website>
+        </extension>
+</addon>
+</addons>
