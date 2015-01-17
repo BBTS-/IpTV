@@ -10,7 +10,7 @@ import xbmcgui
 import xbmcaddon
 import xbmc
 import os
-import updater
+import generator
 
 def unwrapValue(entry, key, default):
     v = None
@@ -47,13 +47,6 @@ def addFolders(folders):
         li.setProperty('IsPlayable', 'false')
         xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li, isFolder=True)
 
-update_status = updater.check_update()
-
-if update_status == '':
-    import generator
-else:
-    xbmcgui.Dialog().ok("Error", update_status)
-    sys.exit(-1)
 
 addon_handle = int(sys.argv[1])
 xbmcplugin.setContent(addon_handle, 'movies')

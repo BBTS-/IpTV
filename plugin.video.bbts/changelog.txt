@@ -1,6 +1,3 @@
-[B]January 16 2015[/B]
-0.0.5: Dynamic updater
-
 [B]January 13 2015[/B]
 0.0.4: Update Icons
 
